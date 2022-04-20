@@ -8417,6 +8417,12 @@ ColorTypes CvPlot::plotMinimapColor()
 			}
 		}
 
+		// Ikaros: not coloring water tiles
+		if(isWater()){
+			return (ColorTypes)GC.getInfoTypeForString("COLOR_CLEAR");
+		}
+
+		
 		if ((getRevealedOwner(GC.getGameINLINE().getActiveTeam(), true) != NO_PLAYER) && !isRevealedBarbarian())
 		{
 			return ((ColorTypes)(GC.getPlayerColorInfo(GET_PLAYER(getRevealedOwner(GC.getGameINLINE().getActiveTeam(), true)).getPlayerColor()).getColorTypePrimary()));

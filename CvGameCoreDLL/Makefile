@@ -34,7 +34,7 @@
 TOOLKIT=$(PROGRAMFILES)\Civ4SDK\Microsoft Visual C++ Toolkit 2003
 PSDK=$(PROGRAMFILES)\Civ4SDK\WindowsSDK
 ## Uncomment to have newly compiled dlls copied to your mod's Assets directory
-YOURMOD=..
+YOURMOD=C:\Program Files (x86)\Steam\steamapps\common\Sid Meier's Civilization IV Beyond the Sword\Beyond the Sword
 
 ## Civ install path
 ## Path to the directory where boost and python is stored
